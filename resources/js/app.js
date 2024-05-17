@@ -16,10 +16,14 @@ import { createApp } from 'vue';
 const app = createApp({});
 
 
-import FrontendComponent from './components/FrontendComponent.vue';
-app.component('frontend-component', FrontendComponent);
+import HomeComponent from './components/frontend/HomeComponent.vue';
+app.component('home-component', HomeComponent);
 import BackendComponent from './components/BackendComponent.vue';
 app.component('backend-component', BackendComponent);
+import HeaderComponent from './layouts/frontend/HeaderComponent.vue';
+app.component('header-component', HeaderComponent);
+import FooterComponent from './layouts/frontend/FooterComponent.vue';
+app.component('footer-component', FooterComponent);
 
 /**
  * The following block of code may be used to automatically register your
