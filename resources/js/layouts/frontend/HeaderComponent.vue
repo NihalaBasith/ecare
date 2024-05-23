@@ -48,10 +48,10 @@
               <router-link class="nav-link" to="/about" active-class="active">About Us</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <router-link class="nav-link" to="/doctors" active-class="active">Doctors</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <router-link class="nav-link" to="/news" active-class="active">News</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/contact" active-class="active">Contact</router-link>
