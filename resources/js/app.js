@@ -6,6 +6,7 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+import router from './router';
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -16,8 +17,7 @@ import { createApp } from 'vue';
 const app = createApp({});
 
 
-import HomeComponent from './components/frontend/HomeComponent.vue';
-app.component('home-component', HomeComponent);
+
 import BackendComponent from './components/BackendComponent.vue';
 app.component('backend-component', BackendComponent);
 import HeaderComponent from './layouts/frontend/HeaderComponent.vue';
@@ -43,6 +43,7 @@ app.component('footer-component', FooterComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
+app.use(router);
 app.mount('#app');
 
 

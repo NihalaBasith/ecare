@@ -41,11 +41,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item ">
+              <router-link class="nav-link" to="/" active-class="active">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <router-link class="nav-link" to="/about" active-class="active">About Us</router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="doctors.html">Doctors</a>

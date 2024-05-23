@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="app">
-        <home-component></home-component>
+    <router-view></router-view>
     </div>
     @vite('resources/js/app.js')
     <script src="../assets/js/jquery-3.5.1.min.js"></script>

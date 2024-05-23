@@ -5,12 +5,14 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\AdminController;
 
 
+
 Auth::routes();
 
-Route::get('/', [FrontendController::class, 'index']);
+Route::get('/{any}', function () {
+    return view('frontend.index');
+})->where('any', '.*');
 
-// Admin panel routes
+
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.dashboard');
-    // Other admin routes...
 });
