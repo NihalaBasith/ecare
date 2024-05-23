@@ -54,7 +54,7 @@
               <a class="nav-link" href="blog.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <router-link class="nav-link" to="/contact" active-class="active">Contact</router-link>
             </li>
             <li class="nav-item">
               <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>
